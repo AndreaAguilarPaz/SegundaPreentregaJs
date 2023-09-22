@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    section {
+        border: 2px solid black;
+        padding: 10px
+    }
+    ul{
+        list-style : none;
+        padding: 0
+
+    }
+
+    ul li {
+        cursor: pointer
+    }
+
+    ul li:hover{
+        border: 2px solid black 
+    }
+    #inventario li{
+        display: inline-block
+    }
+    </style>
+</head>
+<body>
+    <span>
+        <img src="img/tienda.png">
+    </span>
+    <section>
+        <h1>Hi ! Any friend of Ness is welcome in our home! What do you want to buy?</h1>
+        <ul>
+            <li onclick="comprar (medicine)"> Medicine</li>
+            <li onclick="comprar (weapons)"> Weapons</li>
+            <li onclick="comprar(armor)"> Armor</li>
+
+
+        </ul>
+    </section>
+    <section>
+        <h2> My bag</h2>
+        <ul id = "inventario"></ul>
+            
+
+        <h2 id="oro"> Money: <span> </span></h2>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
